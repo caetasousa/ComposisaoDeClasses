@@ -9,8 +9,8 @@ public class Order {
     private LocalDateTime moment;
     private OrderStatus status;
 
-    Cliente cliente;
-    ArrayList<OrderItem> orderItems = new ArrayList<>();
+    private Cliente cliente;
+    private ArrayList<OrderItem> orderItems = new ArrayList<>();
 
     public Order(LocalDateTime moment, OrderStatus status, Cliente cliente) {
         this.moment = moment;
