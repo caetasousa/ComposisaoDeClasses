@@ -1,10 +1,10 @@
 package entities;
 
 public class OrderItem {
-    Integer quantity;
-    Double price;
+    private Integer quantity;
+    private Double price;
 
-    Product product;
+    private Product product;
 
     public OrderItem(Integer quantity, Product product) {
         this.quantity = quantity;

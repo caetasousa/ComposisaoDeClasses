@@ -3,9 +3,9 @@ package entities;
 import java.time.LocalDate;
 
 public class Cliente {
-    String name;
-    String email;
-    LocalDate birthDate;
+    private String name;
+    private String email;
+    private LocalDate birthDate;
 
     public Cliente(String name, String email, LocalDate birthDate) {
         this.name = name;

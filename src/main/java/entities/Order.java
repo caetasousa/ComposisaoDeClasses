@@ -6,8 +6,8 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class Order {
-    LocalDateTime moment;
-    OrderStatus status;
+    private LocalDateTime moment;
+    private OrderStatus status;
 
     Cliente cliente;
     ArrayList<OrderItem> orderItems = new ArrayList<>();
