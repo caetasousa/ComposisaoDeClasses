@@ -12,6 +12,7 @@ public class Order {
     private Cliente cliente;
     private ArrayList<OrderItem> orderItems = new ArrayList<>();
 
+
     public Order(LocalDateTime moment, OrderStatus status, Cliente cliente) {
         this.moment = moment;
         this.status = status;
@@ -24,6 +25,10 @@ public class Order {
 
     public void removeItem(OrderItem item) {
         orderItems.remove(item);
+    }
+
+    public ArrayList<OrderItem> getOrderItems() {
+        return orderItems;
     }
 
     public Double total() {

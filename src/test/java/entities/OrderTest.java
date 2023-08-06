@@ -36,7 +36,7 @@ class OrderTest {
 
 
         int numeroDeItens = 0;
-        for (OrderItem item: pedido.orderItems) {
+        for (OrderItem item: pedido.getOrderItems()) {
             numeroDeItens ++;
         }
         assertEquals(2, numeroDeItens);
@@ -47,7 +47,7 @@ class OrderTest {
         pedido.removeItem(orderItem1);
         int numeroDeItens = 0;
 
-        for (OrderItem item: pedido.orderItems) {
+        for (OrderItem item: pedido.getOrderItems()) {
             numeroDeItens ++;
         }
         assertEquals(1, numeroDeItens);
